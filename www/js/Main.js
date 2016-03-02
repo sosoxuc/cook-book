@@ -16,9 +16,20 @@ function drag(ev) {
 
 function drop(ev) {
     ev.preventDefault()
+    
+    var desk = ev.target
     var data = ev.dataTransfer.getData('text')
     var ingrediant = document.createElement('div')
     ingrediant.className = 'ingrediant'
-    //ingrediant.style.top = '100px'
-    ev.target.appendChild(ingrediant)
+    
+    var removeButton = document.createElement('a')
+    removeButton.appendChild(document.createTextNode('Remove'))
+    removeButton.style.cursor = 'pointer';
+    removeButton.onclick = function (){
+        desk.removeChild(ingrediant)
+    }
+    ingrediant.appendChild(removeButton)
+    
+    
+    desk.appendChild(ingrediant)
 }
