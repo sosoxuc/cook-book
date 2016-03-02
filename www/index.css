@@ -1,0 +1,38 @@
+html { 
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+body { 
+    height: calc(100% - 2px); 
+    margin:1px;
+    padding:0;
+}
+
+.drag {
+    position: absolute;
+    width:100px;
+    height:100px;
+    margin:10px;
+    border:2px solid hsl(200,50%,50%);
+}
+
+.ingrediant {
+    float: left;
+    position: relative;
+    width:100px;
+    height:100px;
+    margin:10px 0 10px 10px;
+    border:2px solid hsl(200,50%,50%);
+}
+
+.desk {
+    position: relative;
+    height: calc(100% - 4px);
+    width: calc(100% - 133px);
+    left:130px;
+    border:1px solid #aaaaaa;
+}
+
+
