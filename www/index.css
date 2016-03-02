@@ -18,6 +18,19 @@ body {
     border:2px solid hsl(200,50%,50%);
 }
 
+.action {
+    position: absolute;
+    margin:20px;
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    border:2px solid hsl(200,50%,50%);
+    top:120px;
+}
+
+
 .ingrediant {
     float: left;
     position: relative;
@@ -26,6 +39,7 @@ body {
     margin:10px 0 10px 10px;
     border:2px solid hsl(200,50%,50%);
 }
+
 
 .desk {
     position: relative;

@@ -19,6 +19,6 @@ function drop(ev) {
     var data = ev.dataTransfer.getData('text')
     var ingrediant = document.createElement('div')
     ingrediant.className = 'ingrediant'
-    ingrediant.style.top = '100px'
+    //ingrediant.style.top = '100px'
     ev.target.appendChild(ingrediant)
 }

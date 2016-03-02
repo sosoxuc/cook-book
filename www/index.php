@@ -22,6 +22,10 @@ echo '<!DOCTYPE html>'
         .'<body">'
             .'<div id="drag1"  class="drag" draggable="true" ondragstart="drag(event)" >'
             .'</div>'
+            
+            .'<div id="drag2"  class="action" draggable="true" ondragstart="drag(event)" >'
+            .'</div>'
+            
             .'<div id="div1" class="desk" ondrop="drop(event)" ondragover="allowDrop(event)">'
             .'</div>'
             .$scripts
